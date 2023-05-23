@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            p{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="p1">hello</p>
+        <button onclick="fun2()">font-size</button>
+        <script>
+             font="1";
+            function fun(font){
+                document.getElementById("p1").style.fontSize=font;
+            }
+
+            function fun2(){
+                setInterval(function(){if(font<=50);
+                    {fun(font++)}
+            },50)
+            }
+        </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="hello">Hello</div>
+    <script>
+      let fontSize = 1;
+      const helloElement = document.getElementById("hello");
+
+      const intervalId = setInterval(() => {
+        fontSize++;
+        helloElement.style.fontSize = `${fontSize}px`;
+        helloElement.style.color = "blue";
+        if (fontSize === 15) {
+          clearInterval(intervalId);
+        }
+      }, 50);
+    </script>
+  </body>
+</html>

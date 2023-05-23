@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function mydisplay(sum){
+                document.getElementById("demo").innerHTML=sum
+                
+            }
+            function mycals(num1,num2,mycallback){
+                sum=num1+num2
+                mycallback(sum)
+            }
+            mycals(13,15,mydisplay)
+        </script>
+    </body>
+</html>
+
+
+// write a js code that display hello with incerasing font size in interval of 15miliseconds in blue color and then it should stop when font size reaches to 15 px.
